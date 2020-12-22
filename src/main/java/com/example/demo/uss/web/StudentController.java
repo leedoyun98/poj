@@ -1,6 +1,6 @@
 package com.example.demo.uss.web;
 
-import java.util.Map; 
+import java.util.Map;
 
 import com.example.demo.cmm.utl.Proxy;
 import com.example.demo.uss.service.model.Student;
