@@ -19,7 +19,7 @@
 	</article>
 </section>
 <footer id="layout-footer">
-<tiles:insertAttribute name="container"/>
+<tiles:insertAttribute name="footer"/>
 </footer>
 <script></script>    
 </body>
