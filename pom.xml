@@ -35,6 +35,7 @@
 		<lombok-version>1.18.16</lombok-version>
 		<commons-fileupload-version>1.4</commons-fileupload-version>
 		<jackson-version>2.11.2</jackson-version>
+		<tiles-version>3.0.8</tiles-version>
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -219,26 +220,44 @@
 		    <version>${lombok-version}</version>
 		    <scope>provided</scope>
 		</dependency>
-		<!-- jackson -->
+		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
-		</dependency>       
-
+		</dependency>  
+		<!-- Jackson -->     
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
 		    <artifactId>jackson-core</artifactId>
 		    <version>${jackson-version}</version>
 		</dependency>
-
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
 		    <artifactId>jackson-databind</artifactId>
 		    <version>${jackson-version}</version>
-		</dependency>	
-		
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-core -->
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-core</artifactId>
+			<version>${tiles-version}</version>
+		</dependency>
+		 
+		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-servlet -->
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-servlet</artifactId>
+			<version>${tiles-version}</version>
+		</dependency>
+		 
+		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-jsp -->
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-jsp</artifactId>
+			<version>${tiles-version}</version>
+		</dependency>
 	</dependencies>
 	
     <build>
