@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:aop="http://www.springframework.org/schema/aop"
@@ -38,7 +37,6 @@
 	        </list>
 	    </property>
 	</bean>
-	
 	<bean id="tilesViewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
 	    <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />
 	    <property name="order" value="1" />
@@ -50,5 +48,5 @@
 	    <property name="order" value="2" />
 	</bean>
 
-	
 </beans>
+		

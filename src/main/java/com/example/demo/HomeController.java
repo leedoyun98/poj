@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import javax.servlet.http.HttpServletRequest; 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -36,24 +36,22 @@ public class HomeController {
         return "index";
     }
     
-    @GetMapping("/move/{dir}/{page}")
-    public String move(@PathVariable String dir, @PathVariable String page) {
-        logger.info("이동 디렉토리: " + dir);
-        logger.info("이동 파일: " + page);
-        return String.format("%s/%s", dir, page);
-    }
 
-    @GetMapping("/transfer/{dir}/{sub}/{page}")
-    public String transfer(@PathVariable String dir, @PathVariable String sub, @PathVariable String page) {
+    @GetMapping("/admin/{dir}/{page}")
+    public String admin(@PathVariable String dir, 
+    						@PathVariable String page) {
         logger.info("이동 디렉토리: " + dir);
-        logger.info("이동 서브 디렉토리: " + sub);
         logger.info("이동 파일: " + page);
-        return String.format("%s/%s/%s", dir, sub, page);
+        return String.format("admin:%s/%s", dir, page);
     }
-    @GetMapping("/home")
-    public String home() {
-    	 logger.info("타일즈 진입 성공 " );
-    	return "public";
+    @GetMapping("/move/{dir}")
+    public String move(@PathVariable String dir) {
+        logger.info("이동 디렉토리: " + dir);
+        return String.format("move:%s", dir);
     }
-	
+    @GetMapping("/content/{dir}")
+    public String content(@PathVariable String dir) {
+        logger.info("이동 디렉토리: " + dir);
+        return String.format("content:%s", dir);
+    }
 }

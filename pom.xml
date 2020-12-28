@@ -238,6 +238,7 @@
 		    <artifactId>jackson-databind</artifactId>
 		    <version>${jackson-version}</version>
 		</dependency>
+		<!-- Tiles -->
 		<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-core -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
