@@ -36,8 +36,5 @@
   </div>
         </div>
     </section>
-    <script>
-	wow.init()
-	</script>
-    
+ 
     

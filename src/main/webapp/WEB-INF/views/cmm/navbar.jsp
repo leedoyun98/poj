@@ -29,6 +29,3 @@
          <li><a id="teacher_register" href="#">Teacher</a></li>               
      </ul>
  </div>
- <script>
-navbar.init()
-</script>

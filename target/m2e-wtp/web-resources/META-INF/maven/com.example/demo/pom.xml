@@ -8,10 +8,7 @@
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<repositories>
-	  <repository>
-	   <id>oracle</id>
-	   <url>http://maven.jahia.org/maven2</url>
-	  </repository>
+	
 	</repositories>
 	<properties>
 		<java-version>11</java-version>
@@ -36,6 +33,9 @@
 		<commons-fileupload-version>1.4</commons-fileupload-version>
 		<jackson-version>2.11.2</jackson-version>
 		<tiles-version>3.0.8</tiles-version>
+		<mysql-version>5.1.6</mysql-version>
+		<mariadb-version>2.7.0</mariadb-version>
+		
 	</properties>
 	<dependencies>
 		<!-- Spring -->
@@ -194,11 +194,7 @@
 		</dependency>
 		
 		<!-- 오라클 JDBC 드라이버 -->
-		<dependency>
-		    <groupId>com.oracle</groupId>
-		    <artifactId>ojdbc7</artifactId>
-		    <version>${ojdbc7-version}</version>
-		</dependency>
+		
 
 		<!-- MyBatis 라이브러리 -->
 		<dependency>
@@ -213,6 +209,17 @@
 		    <artifactId>mybatis-spring</artifactId>
 		    <version>${mybatis-spring-version}</version>
 		</dependency>
+		<dependency>
+              <groupId>mysql</groupId>
+               <artifactId>mysql-connector-java</artifactId>
+              <version>${mysql-version}</version>
+          </dependency>
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>${mariadb-version}</version>
+		</dependency>
+		
 		<!-- Lombok -->
 		<dependency>
 		    <groupId>org.projectlombok</groupId>
