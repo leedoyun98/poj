@@ -1,8 +1,8 @@
 package com.example.demo.www.chap02;
 
 
-
-import java.util.ArrayList;  
+ 
+import java.util.ArrayList;   
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -147,24 +147,24 @@ public class AppleController  {
 	
 	
 	Predicate<Apple> p = (Apple apple) -> {return false;};
-	print("1. 녹색사과 필터링 결과");
-	for(Apple a : as.filterApples(ls, as::isGreenApple)) print(a.toString());
+	print.accept("1. 녹색사과 필터링 결과");
+	for(Apple a : as.filterApples(ls, as::isGreenApple)) print.accept(a.toString());
 	for(Apple a : as.filterApples(ls, (Apple a) -> a.getColor().equals(Color.GREEN) )) 
-		print(a.toString());
-	print("2. 100그램이상 사과 필터링 결과");
-	for(Apple a : as.filterApples(ls, as::isHeavyApple)) print(a.toString());
+		print.accept(a.toString());
+	print.accept("2. 100그램이상 사과 필터링 결과");
+	for(Apple a : as.filterApples(ls, as::isHeavyApple)) print.accept(a.toString());
 	for(Apple a : as.filterApples(ls, (Apple a) -> a.getWeight() > 100))
-		print(a.toString());
-	print("3. 빨간사과 필터링 결과 ... 단, 색깔은 외부주입");
-	for(Apple a : as.filterApplesByColor(ls, Color.RED)) print(a.toString());
-	print("4. 120그램이상 사과 필터링 결과 ... 단, 무게는 외부주입");
-	for(Apple a : as.filterApplesByWeight(ls, 120)) print(a.toString());
-	print("5. 100그램 이상 빨간 사과 필터링 결과");
+		print.accept(a.toString());
+	print.accept("3. 빨간사과 필터링 결과 ... 단, 색깔은 외부주입");
+	for(Apple a : as.filterApplesByColor(ls, Color.RED)) print.accept(a.toString());
+	print.accept("4. 120그램이상 사과 필터링 결과 ... 단, 무게는 외부주입");
+	for(Apple a : as.filterApplesByWeight(ls, 120)) print.accept(a.toString());
+	print.accept("5. 100그램 이상 빨간 사과 필터링 결과");
 	for(Apple a : as.filterApples(ls, (Apple a) -> a.getWeight() > 100  
 			&& a.getColor().equals(Color.RED)))
-		print(a.toString());
+		print.accept(a.toString());
 	
-	print(">>>>>정령>>>>>");
+	print.accept(">>>>>정령>>>>>");
 	// 익명함수
 	Comparator<Apple> c = new Comparator<Apple>() {
 		
@@ -176,8 +176,8 @@ public class AppleController  {
 	};
 	// 람다
 	ls.sort((Apple o1, Apple o2)
-			-> integer(string(o1.getWeight()))
-			.compareTo(integer(string(o2.getWeight()))));
+			-> integer.apply(string.apply(o1.getWeight()))
+			.compareTo(integer.apply(string.apply(o2.getWeight()))));
 
 	
 	
