@@ -12,6 +12,14 @@ import lombok.NoArgsConstructor;
 @Component
 @Data @AllArgsConstructor @Lazy @NoArgsConstructor
 public class Teacher {
-    private String teaNum, name, password, subject,profileImage;
+	private int teaNum, subNum;
+    private String name, password, profileImage;
+    
+    public Teacher(String name, String password, String profileImage, int subNum) {
+    	this.name = name;
+    	this.password = password;
+    	this.subNum = subNum;
+    	this.profileImage = profileImage;
+    }
 
 }

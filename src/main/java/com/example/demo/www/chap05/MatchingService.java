@@ -1,20 +1,16 @@
 package com.example.demo.www.chap05;
 
-
-
-import lombok.Data;
-
 import java.util.Objects;
 
 import org.springframework.context.annotation.Lazy;
 
 
-
 import lombok.AllArgsConstructor;
+import lombok.Data;
 
-@Data @Lazy @AllArgsConstructor  class Trader{
+@Data @Lazy @AllArgsConstructor class Trader {
 	private String name, city;
-	 @Override  
+	@Override
 	  public int hashCode() {
 	    int hash = 17;
 	    hash = hash * 31 + (name == null ? 0 : name.hashCode());
@@ -35,15 +31,19 @@ import lombok.AllArgsConstructor;
 	    eq = eq && Objects.equals(city, o.getCity());
 	    return eq;
 	  }
-	  
+
 	  @Override
 	  public String toString() {
 	    return String.format("Trader:%s in %s", name, city);
 	  }
+
 }
-@Data @Lazy @AllArgsConstructor  class Transaction{
-   private Trader trader;
-int  year, value;
+@Data @Lazy @AllArgsConstructor class Transaction {
+
+	  private Trader trader;
+	  private int year, value;
+
+
 	  @Override
 	  public int hashCode() {
 	    int hash = 17;
@@ -73,13 +73,8 @@ int  year, value;
 	  public String toString() {
 	    return String.format("{%s, year: %d, value: %d}", trader, year, value);
 	  }
-	
-}
 
+	}
 public class MatchingService {
 	
-		 
-
 }
-
-

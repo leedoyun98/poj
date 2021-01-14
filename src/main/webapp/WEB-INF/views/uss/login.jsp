@@ -82,7 +82,9 @@
 </head><!--/head-->
 
 <body>
-    
+    <div class="logo-image">                                
+       <a id="home" href="#"><img class="img-responsive" src="${cmm}/images/logo.png" alt=""> </a> 
+    </div>
      <section id="coming-soon">        
          <div class="container">
             <div class="row">

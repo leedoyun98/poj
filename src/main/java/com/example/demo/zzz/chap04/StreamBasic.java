@@ -18,8 +18,7 @@ public class StreamBasic {
 
     // 자바 8
     getLowCaloricDishesNamesInJava8(Dish.menu).forEach(System.out::println);
- 
-}
+  }
 
   public static List<String> getLowCaloricDishesNamesInJava7(List<Dish> dishes) {
     List<Dish> lowCaloricDishes = new ArrayList<>();

@@ -1,10 +1,11 @@
 package com.example.demo.cmm.utl;
 
+import com.example.demo.www.chap05.MappingService;
 
-
-public class MainTest {
+public class MainTest{
 	public static void main(String[] args) {
-		DummyGenerator s = new DummyGenerator();
-		System.out.println(s.makeUserid());
+		System.out.println("-------");
+		DummyGenerator bs = new DummyGenerator();
+		System.out.println(bs.makeUserid());
 	}
 }

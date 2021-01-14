@@ -1,6 +1,6 @@
 package com.example.demo.zzz.chap07;
 
-import java.util.stream.LongStream; 
+import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
 public class ParallelStreams {

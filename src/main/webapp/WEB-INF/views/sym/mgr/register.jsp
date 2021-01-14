@@ -112,29 +112,7 @@
             </div>
         </div>       
     </section>
-    
-    <script>
-    $('#signupbtn').click(function(e) {
-        e.preventDefault()
-        $.ajax({
-            url: `${ctx}/managers`,
-            type: 'POST',
-            data: JSON.stringify({
-                email: $('#email').val(),
-                password: $('#password').val()
-            }),
-            dataType: 'json',
-            contentType: 'application/json',
-            success: function(d) {
-               location.href='/transfer/sym/mgr/index'
-            },
-            error: function(e) {
-                console.log(`관리자등록 실패: ${e.responseText}`)
-                location.href = '/move/cmm/404'
-            }
-        })
-    })
-
-    </script>
-    
-    
+ 
+  <script>
+  $('#signupbtn').click(function(){ mgr.register(`${ctx}`)})
+  </script>  

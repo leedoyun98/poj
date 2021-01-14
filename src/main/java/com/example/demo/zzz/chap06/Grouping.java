@@ -1,6 +1,6 @@
 package com.example.demo.zzz.chap06;
 
-import static java.util.stream.Collectors.collectingAndThen; 
+import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.counting;
 import static java.util.stream.Collectors.filtering;
 import static java.util.stream.Collectors.flatMapping;

@@ -1,6 +1,6 @@
 package com.example.demo.zzz.chap05;
 
-import static java.util.Comparator.comparing; 
+import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
 
 import java.util.Arrays;

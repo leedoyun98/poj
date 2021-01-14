@@ -71,8 +71,6 @@ public class FilteringApples {
     }
     return result;
   }
-  
-
 
   public static List<Apple> filter(List<Apple> inventory, ApplePredicate p) {
     List<Apple> result = new ArrayList<>();

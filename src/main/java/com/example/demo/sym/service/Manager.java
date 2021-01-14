@@ -12,5 +12,5 @@ import lombok.NoArgsConstructor;
 @Component
 @Data @AllArgsConstructor @Lazy @NoArgsConstructor
 public class Manager {
-    private String mgrNum, email, password,name ,profileImage;
+    private String mgrNum, email, password, name, profileImage;
 }

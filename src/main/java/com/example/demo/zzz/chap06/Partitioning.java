@@ -1,6 +1,6 @@
 package com.example.demo.zzz.chap06;
 
-import static java.util.Comparator.comparingInt; 
+import static java.util.Comparator.comparingInt;
 import static java.util.stream.Collectors.collectingAndThen;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.maxBy;

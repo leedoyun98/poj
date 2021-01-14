@@ -1,8 +1,8 @@
-<%@ page language="java" pageEncoding="UTF-8" %>
+<%@ page language="java" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
-<h1 style="width:300px; margin: 0 auto;padding-bottom: 50px;">관리자 접속화면</h1>
+<h1 style="width:300px;margin: 0 auto;padding-bottom: 50px;">관리자 접속화면</h1>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
@@ -66,20 +66,20 @@ span.psw {
   }
 }
 </style>
-<form >
 
+<div>
   <div class="imgcontainer">
-    <img style="width:100px;height:100px; "src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+    <img style="width:100px;height:100px" src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" id="uid" required>
+    <input type="text" placeholder="Enter Username" id="uid" value="a@test.com" required>
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" id="pwd" required>
+    <input type="password" placeholder="Enter Password" id="pwd" value="1" required>
         
-    <button id = "mgr-access-btn">Login</button>
+    <button id="mgr-access-btn">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
@@ -89,25 +89,7 @@ span.psw {
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
-  
-  
+</div>
 <script>
-$(`#mgr-access-btn`).click(function(e){
-	alert(`${ctx}`)
-	e.preventDefault()
-	$.ajax({
-		url: `${ctx}/managers/access`,
-		type: `POST`,
-		data: JSON.stringify({email: $(`#uid`).val(), password:$(`#pwd`).val()}),
-		dataType: 'json',
-		contentType: 'application/json',
-		success: function(d){
-			location.href =`${ctx}/admin/mgr/index`
-		},
-		error: function(e){
-			alert(`Fail`)
-		}
-	})
-})
+$(`#mgr-access-btn`).click(function() {mgr.access(`${ctx}`)})
 </script>
-</form>

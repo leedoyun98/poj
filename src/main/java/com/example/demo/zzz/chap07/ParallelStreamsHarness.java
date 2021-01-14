@@ -1,6 +1,6 @@
 package com.example.demo.zzz.chap07;
 
-import java.util.concurrent.ForkJoinPool; 
+import java.util.concurrent.ForkJoinPool;
 import java.util.function.Function;
 
 public class ParallelStreamsHarness {

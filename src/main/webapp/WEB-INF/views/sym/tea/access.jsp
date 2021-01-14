@@ -1,8 +1,8 @@
-<%@ page language="java" pageEncoding="UTF-8" %>
+<%@ page language="java" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
-<h1 style="width:300px; margin: 0 auto;padding-bottom: 50px;">교강사 접속 화면</h1>
+<h1 style="width:300px;margin: 0 auto;padding-bottom: 50px;">교강사 접속화면</h1>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 form {border: 3px solid #f1f1f1;}
@@ -66,17 +66,17 @@ span.psw {
   }
 }
 </style>
-<form action="/action_page.php" method="post">
+
   <div class="imgcontainer">
-    <img style="width:100px;height:100px; "src="https://www.w3schools.com/howto/img_avatar2.png"  alt="Avatar" class="avatar">
+    <img style="width:100px;height:100px" src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" id="uid" required>
+    <label for="uname"><b>교강사번호</b></label>
+    <input type="text" placeholder="Enter Username" id="teaNum" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" id="pwd" required>
+    <label for="psw"><b>비밀번호</b></label>
+    <input type="password" placeholder="Enter Password" id="password" required>
         
     <button id="tea-login-btn">Login</button>
     <label>
@@ -88,11 +88,7 @@ span.psw {
     <button type="button" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
-</form>
-<script>
-$(`#tea-login-btn`).click(function(e){
-	alert(`${_}`)
-	e.preventDefault()
-})
-	
-		</script>
+  <script>
+$(`#tea-login-btn`).click(function() {tea.access(`${ctx}`)})
+
+  </script>

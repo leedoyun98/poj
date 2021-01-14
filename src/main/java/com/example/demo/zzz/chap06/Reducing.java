@@ -1,6 +1,6 @@
 package com.example.demo.zzz.chap06;
 
-import static java.util.stream.Collectors.reducing; 
+import static java.util.stream.Collectors.reducing;
 import static com.example.demo.zzz.chap06.Dish.menu;
 
 public class Reducing {

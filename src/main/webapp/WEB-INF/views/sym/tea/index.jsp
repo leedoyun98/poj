@@ -560,6 +560,10 @@
 			</footer>
 		</div>
 	</div>
-
+<script>
+$(`#sidebar-home`).text(`교강사 홈`)
+$(`#mgr-data-mgt`).text(`성적 관리`)
+$(`#layout-container`).empty()
+</script>
 	
 	

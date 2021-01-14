@@ -1,5 +1,5 @@
 /*
- * Copyright 2005 JBoss Inc 
+ * Copyright 2005 JBoss Inc
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 package com.example.demo.zzz.chap10.dsl;
 
-import java.util.function.Consumer; 
+import java.util.function.Consumer;
 
 import com.example.demo.zzz.chap10.dsl.model.Order;
 import com.example.demo.zzz.chap10.dsl.model.Stock;

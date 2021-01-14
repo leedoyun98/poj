@@ -1,6 +1,6 @@
 package com.example.demo.zzz.chap05;
 
-import static java.util.stream.Collectors.toList; 
+import static java.util.stream.Collectors.toList;
 import static com.example.demo.zzz.chap04.Dish.menu;
 
 import java.util.Arrays;

@@ -16,7 +16,7 @@
 
 package com.example.demo.zzz.chap10.dsl;
 
-import static java.util.stream.Collectors.groupingBy; 
+import static java.util.stream.Collectors.groupingBy;
 import static com.example.demo.zzz.chap06.Dish.menu;
 import static com.example.demo.zzz.chap10.dsl.Grouping.GroupingBuilder.groupOn;
 
